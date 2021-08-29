@@ -61,6 +61,22 @@ leInput.addEventListener('click', function(){
   }
 })
 
+leInput.addEventListener('keypress', function(e){
+  if (e.key === 'Enter') {
+    let li = document.createElement("LI")
+    li.textContent = leInput.value
+    fullList.appendChild(li)
+    let img = document.createElement("IMG")
+    img.src = "images/icon-cross.svg"
+    img.className = "close"
+    li.appendChild(img)
+    atribuiClose()
+    leInput.value = ""
+    updateIL()
+    slist("elList")
+  }
+})
+
 //Evento do botão de clear
 let clrBttn = document.getElementById("clr")
 clrBttn.addEventListener('click', function(){
