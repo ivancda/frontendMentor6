@@ -16,6 +16,7 @@ updateIL()
 for (let i = 0; i < listItens.length; i++) {
   let img = document.createElement("IMG")
   img.src = "images/icon-cross.svg"
+  img.alt = "CROSS"
   img.className = "close"
   listItens[i].appendChild(img)
 }
@@ -52,6 +53,7 @@ leInput.addEventListener('click', function(){
     fullList.appendChild(li)
     let img = document.createElement("IMG")
     img.src = "images/icon-cross.svg"
+    img.alt = "CROSS"
     img.className = "close"
     li.appendChild(img)
     atribuiClose()
@@ -68,6 +70,7 @@ leInput.addEventListener('keypress', function(e){
     fullList.appendChild(li)
     let img = document.createElement("IMG")
     img.src = "images/icon-cross.svg"
+    img.alt = "CROSS"
     img.className = "close"
     li.appendChild(img)
     atribuiClose()
