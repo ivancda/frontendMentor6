@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" class="theme-dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Todo app</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main>
+    <div class="hdr">
+      <h1>TODO</h1><div class="thTog"></div>
+    </div>
+    <div class="inputBox"><input id="inpt" placeholder="Create a new todo..." type="text"></div>
+    <div class="listBox">
+      <ul id="elList">
+        <li class="checked">Complete online JavaScript course</li>
+        <li>Jog around the park 3x</li>
+        <li>10 minutes meditation</li>
+        <li>Read for 1 hour</li>
+        <li>Pick up groceries</li>
+        <li>Complete Todo App on Frontend Mentor</li>
+      </ul>
+      <div class="clearBox">
+        <p><span id="itLeft"></span> items left</p>
+        <div class="showBoxDois">
+          <span class="all shBttn shBttnAct">All</span>
+          <span class="active shBttn">Active</span>
+          <span class="compl shBttn">Completed</span>
+        </div>
+        <span id="clr">Clear Completed</span>
+      </div>
+    </div>   
+    <div class="showBox">
+      <span class="all shBttn shBttnAct">All</span>
+      <span class="active shBttn">Active</span>
+      <span class="compl shBttn">Completed</span>
+    </div>
+    <p class="dragT">Drag and drop to reorder list</p>
+  </main>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/ivancda">Ivan Coelho</a>.
+  </div>
+</body>
+</html>
